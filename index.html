@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!--Protocolo para ponerlo en español-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dentro de las telecomunicaciones es muy importante
+    el conocimiento de los sistemas implementados con fibra optica (FO), por lo tanto esta
+    pagina web se centrara en el proceso de comunicación de dos ciudades que se encuentran
+    a más de 400 km de distancia haciendo uso de la FO comercial."><!--Descripción de la pagina para google-->
+    <meta name="robots" content="index, follow"><!--Dejar que google indexe la pagina-->
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /><!--Insertar icono a la pagina-->
+    
+    <link rel="stylesheet" href="Estilos/EstilosMain.css" type="text/css">
+
+
+    <!--Scripts para formulas matematicas-->
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <script src="Emergente.js"></script>
+    <title>Telecomunicaciones</title>
+</head>
+
+
+
+<header class="header">
+    
+    <div class="header-Item">
+        <h1 class="header-Item">Fibra optica</h1>
+    </div>
+
+    <div class="header-Item">
+        <a class="header-Item--enlaces" href="Ciudades.html">Sobre las ciudades</a>
+        <a class="header-Item--enlaces" href="Autores.html">Sobre los autores</a>
+    </div>
+    
+</header>
+
+
+<body>
+    
+    <div class="Cont-Ciudades">
+        <section>
+            <h2>Ciudades</h2>
+            <p>Las ciudades seleccionadas para este trabajo fueron "Bogotá D.c." y "Barranquilla" 
+                debido a que se encuentran a una distancia de "1000 Km", si se quiere saber
+                más a cerca de estas ciudades mire el apartado <a href="Ciudades.html" class="Links">Sobre las ciudades</a>
+            </p>
+        </section>
+        <center>
+            <div class="img">
+                <img  src="imagenes/Barranquilla.jpg" alt="Barranquilla">
+            </div>
+            <div class="img">
+                <img src="imagenes/bogota.jpg" alt="Bogotá">
+            </div>
+            <div class="img">
+                <img src="imagenes/Distancia_ciu.jpg" alt="Distancia desde Bogotá hasta Barranquilla"><br>
+                
+            </div>
+        </center>
+        
+    </div>
+
+    <!--Presupuesto de ancho de banda-->
+    <div class="Cont-Presupuesto_PB">
+        <h2>Presupuesto de ancho de banda</h2>
+
+        <div class="Cont-Presupuesto_PB--Cajas">
+            <section>
+                <h3>Formulas.</h3>
+                <p>
+                    
+                </p>
+
+            </section>
+            
+        </div>
+
+        <div class="Cont-Presupuesto_PB--Cajas">
+            
+            <section>
+                <h3>Analisis.</h3>
+
+                <p>
+                    
+                </p>
+
+            </section>
+        </div>
+
+    </div>
+
+
+    <!--Presupuesto de potencia-->
+    <div class="Cont-Presupuesto_PP">
+        <h2>Presupuesto de potencia</h2>
+        <div class="Cont-Presupuesto_PP--Cajas">
+            <h3>Formulas</h3>
+                <section>
+                    <ul>
+                        <li class="prueba">\(L_{TT}(dB)=\alpha_{FO}(dB/Km)l_{FO}(Km)+\alpha_{c}(dB)\#C+\alpha_E(dB)\#E\)</li>
+                        <li class="prueba">\(P_T(dBm)-L_{TT}(dB)-MDI(dB)+G(dB)\geq S(dBm)\)</li>
+                        <li class="prueba">\(P_{R}(dBm)\geq S(dBm)\)</li>
+                        <li>\(\#E=\frac{l_{FO}(Km)}{l_{C_{FO}}(Km)}\)</li>
+                        <li>\(\#C=2\)</li>
+                        <li>\(MDI=3(dB)\)</li>
+                    </ul>
+                    <p class="Cont-Presupuesto_PB--Cajas-Donde">Donde:</p>
+                    <p>
+                        <ul>
+                            <li>\(P_T\): Potencia total.</li>
+                            <li>\(L_{TT}\): Perdidas por atenuación total.</li>
+                            <li>\(MDI\): Criterio de diseño.</li>
+                            <li>\(G\): Ganancia por amp optico.</li>
+                            <li>\(l_{FO}\): Longitud de la FO.</li>
+                            <li>\(l_{C_{FO}}\): Longitud del carriel de la FO.</li>
+                            <li>\(S\): Sensibilidad, se relaciona con los BER.</li>
+                            <li>\(\alpha_{FO}\): Atenuación de la FO.</li>
+                            <li>\(\alpha_E\): Atenuación por empalme.</li>
+                            <li>\(\alpha_C\): Atenuación por conector.</li>
+                            <li>\(\#C\): Numero de conexiones.</li>
+                            <li>\(\#E\): Numero de empalmes.</li>
+                        </ul>
+                    </p>
+                </section>
+        </div>
+        
+
+        <div class="Cont-Presupuesto_PP--Cajas">
+            <h3>Analisis</h3>
+            <section>
+                <p>
+                    \Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ea, perspiciatis iure sunt reiciendis error recusandae molestiae, fugiat inventore iste tempora quo optio, voluptas sequi deleniti accusamus illum ab expedita aliquid?
+                    \Lorem ipsum dolor, sit amet consectetur adipisicing elit. Exercitationem veniam laborum ut eligendi molestias at maiores eos perspiciatis, itaque nobis officia quam doloribus voluptatibus inventore consectetur reiciendis, suscipit temporibus accusantium.
+                    \Lorem ipsum dolor sit amet, consectetur adipisicing elit. Temporibus, enim praesentium tempora modi iure dicta ipsam, architecto doloremque commodi sed consequatur eos eius, dignissimos excepturi asperiores perferendis molestiae laboriosam adipisci!
+                    \Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quibusdam, asperiores corporis est libero tenetur eveniet eligendi voluptatum voluptates accusantium architecto, dolor consequatur enim ipsam autem illum vitae nemo tempore.
+                    \Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit aperiam repudiandae iste repellat a error quod quisquam obcaecati temporibus mollitia, deserunt quasi cumque sapiente veritatis et quam quis, tempore rem?
+                    \Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum repudiandae, voluptatum sed aspernatur sequi natus, atque velit mollitia soluta incidunt odio deserunt odit, hic praesentium. Doloribus tenetur voluptatem incidunt corrupti?
+                </p>
+            </section>
+        </div>
+
+     
+    </div>
+
+  
+
+
+</body>
+
+
+<footer class="footer">
+
+    
+    <div class="Cont_form">
+        <h2>Envianos tu opinión</h2>
+        <form action="mailto:juan1jua.jdar@gmail.com.co" method="post" name="form1">
+
+            <label for="Nombre">Nombre:</label>
+            <input class="form--main" type="text" id="Nombre">
+    
+            <label for="Email">Email:</label>
+            <input class="form--main" type="email" id="Email">
+    
+            <label for="Opinion">Opinión: </label>
+            <textarea class="form--main" id="Opinion" cols="30" rows="10"></textarea>
+    
+            <input class="form--main_botones" type="submit" value="Enviar">
+            <input class="form--main_botones"  type="reset" value="Reset">
+        </form>
+    </div>
+
+    <div class="Cont_form">
+        <h2>Autores</h2>
+        <p>Juan David Acosta Rincon -- 20191005112 <br>
+            Autor 2 -- Codigo autor 2 <br>
+            <br>
+            Telecomunicaciones 1 <br>
+            Universidad Distrital Francisco José de Caldas <br>
+            
+        </p>
+    </div>
+    
+
+</footer>
+
+
+
+</html>
